@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_1"
+    tools:context=".professor.LectureDetailsFragment">
+
+    <TextView
+        android:id="@+id/fragment_lecture_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_date"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_type_title" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_num_lectures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_num_lectures_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_num_students" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_average_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_average_attendance_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_num_lectures" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_list_of_students_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_list_of_students"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_average_attendance_title" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_average_attendance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_average_attendance"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_num_lectures_title" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_num_lectures_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_num_of_lectures"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_num_students_title" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_num_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_num_students_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_date" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_num_students_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_num_of_students"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_date_title" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_date_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_type" />
+
+    <TextView
+        android:id="@+id/fragment_my_subjects_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:elevation="16dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toTopOf="@+id/fragment_subject_details_title_view" />
+
+    <View
+        android:id="@+id/fragment_subject_details_title_view"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_lecture_type"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_name_title4" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_name_title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fragment_lecture_name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_subject_details_title_view"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_subject_details_title_view" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_type_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_name" />
+
+    <TextView
+        android:id="@+id/fragment_lecture_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_lecture_name_title4"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_subject_details_title_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_lecture_list_of_students"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_lecture_list_of_students_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
